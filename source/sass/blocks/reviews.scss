@@ -1,0 +1,70 @@
+.reviews {
+  background-image: url("../../img/zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: bottom center;
+}
+.reviews__wrapper {
+  padding: 30px 30px 45px 30px;
+}
+
+.reviews__title {
+  margin-bottom: 14px;
+}
+
+.reviews__list {
+  @include no-list-style;
+}
+
+.reviews__quote {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.reviews__text {
+  margin: 0;
+  margin-bottom: 33px;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.reviews__author-name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.reviews__author-nickname {
+  display: block;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.reviews__buttons {
+  letter-spacing: -.36em;
+}
+
+.reviews__button {
+  display: inline-block;
+  padding: 13px 0;
+  background-color: transparent;
+  min-width: 130px;
+  width: 50%;
+  border: 1px solid #ECECEC;
+}
+
+.reviews__button--next {
+  border-left: none;
+}
+
+.reviews__write-link {
+  display: block;
+  margin-top: 38px;
+  text-decoration: none;
+  letter-spacing: normal;
+  @include standart-button;
+}

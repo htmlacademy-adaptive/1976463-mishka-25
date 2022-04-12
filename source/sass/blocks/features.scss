@@ -1,0 +1,51 @@
+.features__wrapper {
+  padding: 30px;
+}
+
+.features__list {
+  @include no-list-style;
+}
+
+.features__item {
+  padding-top: 83px;
+  color: #000000;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+
+  &--eco {
+    background-image: url("../../img/eco.svg");
+    background-repeat: no-repeat;
+    background-position: top 30px left;
+  }
+
+  &--price {
+    background-image: url("../../img/price.svg");
+    background-repeat: no-repeat;
+    background-position: top 30px left;
+  }
+
+  &--like {
+    background-image: url("../../img/like.svg");
+    background-repeat: no-repeat;
+    background-position: top 30px left;
+  }
+
+  &--handmade {
+    background-image: url("../../img/handmade.svg");
+    background-repeat: no-repeat;
+    background-position: top 30px left;
+  }
+
+  &--support {
+    background-image: url("../../img/support.svg");
+    background-repeat: no-repeat;
+    background-position: top 30px left;
+  }
+
+  &--wrapper {
+    background-image: url("../../img/wrapper.svg");
+    background-repeat: no-repeat;
+    background-position: top 30px left;
+  }
+}

@@ -1,0 +1,24 @@
+.parameters-list {
+  @include no-list-style;
+  display: grid;
+  grid-template-columns: 37% auto;
+}
+
+.parameters-list__parameter {
+  border-bottom: 1px solid #ECECEC;
+  padding-bottom: 16px;
+
+  &:not(:first-of-type) {
+    padding-top: 12px;
+  }
+}
+
+.parameters-list__value {
+  margin: 0;
+  border-bottom: 1px solid #ECECEC;
+  padding-bottom: 16px;
+
+  &:not(:first-of-type) {
+    padding-top: 12px;
+  }
+}

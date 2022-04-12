@@ -1,0 +1,40 @@
+.user-list__item {
+  border-left: 1px solid #E5E5E5;
+}
+
+.user-list__item--search {
+  position: relative;
+  min-width: 82px;
+}
+
+.user-list__item--cart {
+  position: relative;
+  min-width: 264px;
+  text-align: right;
+}
+
+.user-list__search-icon {
+  position: absolute;
+  bottom: 32px;
+  left: 33px;
+}
+
+.user-list__link {
+  display: block;
+  font-weight: 700;
+  padding: 32px 0 32px 0;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.user-list__cart-icon {
+  position: absolute;
+  bottom: 32px;
+  left: 33px;
+}
+
+.user-list__link--search {
+  padding: 44px 0 44px 0;
+}
