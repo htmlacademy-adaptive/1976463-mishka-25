@@ -1,9 +1,10 @@
 .main-nav  {
   display: none;
   @media (min-width: 768px) {
-      max-height: 88px;
+    max-height: 88px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
   }
 }
 
@@ -15,6 +16,8 @@
 
 .main-nav__list {
   @include no-list-style;
+
+  z-index: 1;
   display: flex;
   align-items: center;
 }
@@ -31,5 +34,6 @@
   line-height: 24px;
   order: 3;
   margin-left: auto;
-  color: #444444
+  color: #444444;
+  z-index: 1;
 }
