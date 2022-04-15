@@ -1,3 +1,10 @@
+.user-list {
+  @media (min-width: 1150px) {
+    width: 40%;
+    justify-content: flex-end;
+  }
+}
+
 .user-list__item {
   border-left: 1px solid #e5e5e5;
 }

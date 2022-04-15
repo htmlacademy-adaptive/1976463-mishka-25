@@ -1,0 +1,21 @@
+.additional-list {
+  display: none;
+
+  @media (min-width: 1150px) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60%;
+    order: 4;
+  }
+}
+
+.additional-list__link {
+  display: block;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 20px 20px 20px 0;
+  font-size: 15px;
+  line-height: 24px;
+}
+

@@ -12,16 +12,6 @@
   }
 }
 
-.main-header__logo {
-  align-self: center;
-  width: 86px;
-  margin: 0 auto;
-
-  @media (min-width: 768px) {
-    margin: 0;
-    margin-right: 31%;
-  }
-}
 
 .main-header__container {
   display: flex;
@@ -31,12 +21,41 @@
   @media (min-width: 768px) {
     padding: 0 50px;
   }
+
+  @media (min-width: 1150px) {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+}
+
+.main-header__logo {
+  align-self: center;
+  width: 86px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    margin-right: 31%;
+  }
+
+  @media (min-width: 1150px) {
+    order: 2;
+    margin: 0 auto;
+  }
 }
 
 .user-list {
   order: 1;
+
+  @media (min-width: 1150px) {
+    order: 3
+  }
 }
 
 .site-list {
   order: 2;
+
+  @media (min-width: 1150px) {
+    order: 1;
+  }
 }

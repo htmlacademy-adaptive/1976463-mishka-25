@@ -1,7 +1,25 @@
 .product-cards {
-  background-image: url("../../img/zigzag-line.svg");
-  background-repeat: repeat-x;
-  background-position: bottom center;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 17px;
+    background-image: url("../../img/zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: bottom center;
+  }
+
+  @media (min-width: 768px) {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 17px;
+      background-image: url("../../img/zigzag-line-desktop.svg");
+      background-repeat: repeat-x;
+      background-position: bottom center;
+    }
+  }
 }
 
 .product-card__parameters-list {
