@@ -1,9 +1,19 @@
 .features__wrapper {
   padding: 30px;
+
+  @media (min-width: 768px) {
+    padding: 50px;
+    padding-bottom: 83px;
+  }
 }
 
 .features__list {
   @include no-list-style;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .features__item {
@@ -12,6 +22,12 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 22px;
+    padding-right: 40px;
+  }
 
   &--eco {
     background-image: url("../../img/eco.svg");
@@ -23,12 +39,20 @@
     background-image: url("../../img/price.svg");
     background-repeat: no-repeat;
     background-position: top 30px left;
+
+    @media (min-width: 768px) {
+      grid-row: 2/3;
+    }
   }
 
   &--like {
     background-image: url("../../img/like.svg");
     background-repeat: no-repeat;
     background-position: top 30px left;
+
+    @media (min-width: 768px) {
+      grid-row: 3/4;
+    }
   }
 
   &--handmade {

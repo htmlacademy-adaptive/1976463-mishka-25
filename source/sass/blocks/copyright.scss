@@ -3,6 +3,10 @@
   align-items: center;
   padding: 22px 0;
   justify-content: center;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
 }
 
 .copyright__link {

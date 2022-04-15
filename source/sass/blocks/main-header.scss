@@ -1,8 +1,14 @@
 .main-header {
-  border-top: 1px solid #ECECEC;
-  border-bottom: 1px solid #ECECEC;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+
   @media (min-width: 768px) {
     border-top: none;
+    border-bottom: none;
+    background: linear-gradient(#ffffff 88px, #ececec 2px, transparent 90px);
+    background-color: #fafafa;
+    background-repeat: no-repeat;
+    background-size: 100% 176px;
   }
 }
 
@@ -10,6 +16,7 @@
   align-self: center;
   width: 86px;
   margin: 0 auto;
+
   @media (min-width: 768px) {
     margin: 0;
     margin-right: 31%;
@@ -20,6 +27,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
   @media (min-width: 768px) {
     padding: 0 50px;
   }
