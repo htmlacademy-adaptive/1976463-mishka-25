@@ -10,6 +10,11 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @media (min-width: 1150px) {
+    width: 1050px;
+    margin: 0 auto;
+  }
 }
 
 .main-footer__logo {

@@ -1,4 +1,5 @@
 .reviews {
+  position: relative;
   background-image: url("../../img/zigzag-line.svg");
   background-repeat: repeat-x;
   background-position: bottom center;
@@ -7,13 +8,32 @@
     padding-bottom: 25px;
 
     &::after {
-      content: "";
+    /*  content: "";
       position: absolute;
       width: 100%;
       height: 17px;
       background-image: url("../../img/zigzag-line-desktop.svg");
       background-repeat: repeat-x;
       background-position: bottom center;
+      */
+    }
+
+    @media (min-width: 1150px) {
+      width: 1050px;
+      margin: 0 auto;
+      padding-bottom: 69px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        background-image: url("../../img/zigzag-line-desktop.svg");
+        width: 100%;
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+        height: 23px;
+        background-size: 1050px 23px;
+      }
     }
   }
 
@@ -22,6 +42,7 @@
     background-repeat: no-repeat;
     background-position: left top;
   }
+
 }
 
 .reviews__wrapper {
@@ -29,7 +50,12 @@
   padding: 30px 30px 45px 30px;
 
   @media (min-width: 768px) {
-    padding: 83px 50px 65px 50px;
+    padding: 79px 50px 65px 50px;
+  }
+
+  @media (min-width: 1150px) {
+    width: 930px;
+
   }
 }
 
@@ -37,13 +63,22 @@
   margin-bottom: 14px;
 
   @media (min-width: 768px) {
-    margin-bottom: 38px;
+    margin-bottom: 36px;
     max-width: 75%;
+  }
+
+  @media (min-width: 1150px) {
+    margin-left: 124px;
+    max-width: 65%;
   }
 }
 
 .reviews__list {
   @include no-list-style;
+
+  @media (min-width: 1150px) {
+    margin-left: 126px;
+  }
 }
 
 .reviews__quote {
@@ -62,6 +97,10 @@
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 61px;
+  }
+
+  @media (min-width: 1150px) {
+    margin-bottom: 44px;
   }
 }
 
@@ -95,8 +134,12 @@
 
   @media (min-width: 768px) {
     position: absolute;
-    right: 40px;
-    bottom: 95px;
+    right: 45px;
+    bottom: 85px;
+  }
+
+  @media (min-width: 1150px) {
+    right: -24px;
   }
 }
 
@@ -128,8 +171,13 @@
 
   @media (min-width: 768px) {
     position: absolute;
-    top: 35px;
-    right: 37px;
+    top: 41px;
+    right: 30px;
     width: 24%;
+  }
+
+  @media (min-width: 1150px) {
+    width: 175px;
+    right: -25px;
   }
 }

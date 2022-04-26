@@ -20,8 +20,21 @@
       background-position: bottom center;
     }
   }
+
+  @media (min-width: 1150px) {
+    padding-top: 115px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../../img/zigzag-line-desktop.svg");
+      width: 1050px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 23px;
+      background-size: 1050px 23px;
+    }
+  }
 }
 
-.product-card__parameters-list {
-  margin-bottom: 28px;
-}
+

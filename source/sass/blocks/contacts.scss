@@ -1,3 +1,12 @@
+.contacts {
+  @media (min-width: 1150px) {
+    position: relative;
+    width: 1050px;
+    margin: 0 auto;
+    padding-bottom: 78px;
+  }
+}
+
 .contacts__wrapper {
   padding: 30px 30px;
 
@@ -12,6 +21,20 @@
       right: 50px;
     }
   }
+
+  @media (min-width: 1150px) {
+    max-width: 280px;
+    padding-top: 175px;
+    padding-right: 26px;
+    padding-left: 175px;
+
+    &::after {
+      content: url("../../img/flag.svg");
+      position: absolute;
+      top: 158px;
+      right: 371px;
+    }
+  }
 }
 
 .contacts__title {
@@ -19,6 +42,10 @@
 
   @media (min-width: 768px) {
     margin-bottom: 49px;
+  }
+
+  @media (min-width: 1150px) {
+    margin-bottom: 34px;
   }
 }
 
@@ -33,6 +60,12 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  @media (min-width: 1150px) {
+    display: grid;
+    grid-template-columns: 76px 208px;
+    row-gap: 30px;
+  }
 }
 
 .contacts__item {
@@ -45,6 +78,11 @@
     font-size: 17px;
     line-height: 30px;
   }
+
+  @media (min-width: 1150px) {
+    width: auto;
+  }
+
 }
 
 .contacts__description {
@@ -55,6 +93,10 @@
     font-size: 17px;
     line-height: 30px;
   }
+
+  @media (min-width: 1150px) {
+    width: auto;
+  }
 }
 
 .contacts__email {
@@ -63,6 +105,10 @@
   font-size: 14px;
   line-height: 30px;
   color: #444444;
+
+  @media (min-width: 768px) {
+    font-size: 17px;
+  }
 }
 
 .contacts__address {
@@ -70,10 +116,21 @@
   font-size: 14px;
   line-height: 30px;
   color: #444444;
+
+  @media (min-width: 768px) {
+    font-size: 17px;
+  }
 }
 
 .contacts__map {
   width: 100%;
+
+  @media (min-width: 1150px) {
+    position: absolute;
+    top: 103px;
+    right: 0;
+    width: 527px;
+  }
 }
 
 .contacts__button-wrapper {
@@ -84,6 +141,12 @@
     width: 35%;
     margin: 0 auto;
   }
+
+  @media (min-width: 1150px) {
+    margin: 0;
+    padding: 25px 50px;
+  }
+
 }
 
 .contacts__write-link {
@@ -91,4 +154,9 @@
   text-decoration: none;
 
   @include standart-button;
+
+  @media (min-width: 1150px) {
+    width: 230px;
+    margin-left: 130px;
+  }
 }
