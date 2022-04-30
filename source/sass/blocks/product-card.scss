@@ -1,16 +1,16 @@
 .product-card {
-  padding: 31px 30px 36px 30px;
+  padding: 32px 30px 25px 30px;
 
   @media (min-width: 768px) {
-    padding-right: 50px;
-    padding-left: 50px;
+    padding: 52px 50px 53px 50px;
   }
 
   @media (min-width: 1150px) {
     position: relative;
+    padding-left: 225px;
     max-width: 1050px;
     margin: 0 auto;
-    padding-bottom: 90px;
+    padding-bottom: 74px;
   }
 }
 
@@ -19,8 +19,6 @@
 
   @media (min-width: 1150px) {
     z-index: 1;
-    margin-left: 43px;
-    order: 2;
   }
 }
 
@@ -29,28 +27,32 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 17px;
-  line-height: 20px;
+  line-height: 17px;
 
   @media (min-width: 768px) {
     margin-left: auto;
-    width: 100px;
+    width: 125px;
     text-align: center;
   }
 
   @media (min-width: 1150px) {
     margin-left: 32px;
+    position: absolute;
+    top: 59px;
+    left: 38px;
   }
 }
 
 .product-card__description {
   margin: 0;
-  padding: 17.5px 0 28px 0;
+  padding: 15px 0 28px 0;
   font-size: 15px;
   line-height: 24px;
   color: #444444;
 
   @media (min-width: 768px) {
-    padding-top: 0;
+    padding: 0;
+    margin-bottom: 48px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -76,12 +78,28 @@
 
 .product-card__price {
   display: block;
-  padding: 25px 0;
+  padding: 27px 0 24px 0;
   margin: 0 auto;
+  font-size: 17px;
+  line-height: 24px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 25px 0 33px 0;
+  }
+
+  @media (min-width: 1150px) {
+    padding: 21px 0 33px 0;
+  }
 }
 
 .product-card__button {
   @include standart-button;
+
+  @media (min-width: 768px) {
+    font-size: 17px;
+  }
 }
 
 .product-card__title-wrapper {
@@ -91,8 +109,12 @@
     margin-bottom: 50px;
   }
 
+  @media (min-width: 768px) {
+    margin-bottom: 34px;
+  }
+
   @media (min-width: 1150px) {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 }
 
@@ -113,8 +135,10 @@
 
 .product-card__image-wrapper {
   @media (min-width: 768px) {
-    width: 49%;
+    width: 50%;
+    margin-top: 14px;
   }
+
 }
 
 .prodict-cart__content-wrapper {
@@ -126,7 +150,6 @@
   @media (min-width: 1150px) {
     flex-direction: column;
     width: 292px;
-    margin-left: 180px;
   }
 }
 
@@ -135,13 +158,12 @@
   flex-direction: column;
 
   @media (min-width: 768px) {
-    width: 43%;
-    margin-top: -128px;
+    width: 43.5%;
+    margin-top: -136px;
   }
 
   @media (min-width: 1150px) {
     margin: 0;
     width: 292px;
-    margin-left: 180px;
   }
 }

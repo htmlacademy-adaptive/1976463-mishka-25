@@ -12,7 +12,6 @@
   }
 }
 
-
 .main-header__container {
   display: flex;
   flex-wrap: wrap;
@@ -30,8 +29,6 @@
 
 .main-header__logo {
   align-self: center;
-  width: 86px;
-  margin: 0 auto;
 
   @media (min-width: 768px) {
     margin: 0;
@@ -41,6 +38,33 @@
   @media (min-width: 1150px) {
     order: 2;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-header__mishka-logo--mobile {
+    display: none;
+  }
+}
+
+.main-header__mishka-logo--tablet {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    margin-left: -2px;
+  }
+
+  @media (min-width: 1150px) {
+    display: none;
+  }
+}
+
+.main-header__mishka-logo--desktop {
+  display: none;
+
+  @media (min-width: 1150px) {
+    display: block;
   }
 }
 

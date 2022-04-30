@@ -1,0 +1,44 @@
+.production__container {
+  margin: 0 30px 30px 30px;
+  border: 1px solid #ececec;
+  padding-bottom: 33px;
+}
+
+.production__title {
+  margin: 0;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  padding: 21px 10px 26px 90px;
+  background-image: url("../../img/video-icon.svg");
+  background-position: left 30px center;
+  background-repeat: no-repeat;
+}
+
+.production__wrapper {
+  position: relative;
+}
+
+.production__link--play {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.production__description {
+  margin: 0;
+  font-size: 13px;
+  line-height: 24px;
+  padding: 30px;
+}
+
+.production__button {
+  @include standart-button;
+  text-decoration: none;
+  display: block;
+  width: 74%;
+  margin: 0 auto;
+
+}
