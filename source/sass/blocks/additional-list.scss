@@ -21,5 +21,13 @@
   text-decoration: none;
   font-size: 15px;
   line-height: 24px;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 

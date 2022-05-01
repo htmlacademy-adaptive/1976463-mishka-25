@@ -162,6 +162,16 @@
   width: 50%;
   border: 1px solid #ececec;
 
+  &:hover {
+    opacity: 0.6;
+    background-color: transparent;
+  }
+
+  &:active {
+    opacity: 0.3;
+    background-color: transparent;
+  }
+
   @media (min-width: 768px) {
     border: none;
     min-width: 54px;

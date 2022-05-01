@@ -30,6 +30,14 @@
 .main-header__logo {
   align-self: center;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: 768px) {
     margin: 0;
     margin-right: 31%;
