@@ -14,3 +14,11 @@
 .socials__item:not(:nth-child(3n)) {
   margin-right: 29px;
 }
+
+.socials__link:hover .socials__icon {
+  fill: #46C1AE;
+}
+
+.socials__link:active .socials__icon {
+  opacity: 0.3;
+}
