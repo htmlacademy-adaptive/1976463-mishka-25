@@ -17,11 +17,14 @@
 }
 
 .main-header__container {
+  position: relative;
+  min-height: 79px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 
   @media (min-width: 768px) {
+    position: static;
     padding: 0 50px;
   }
 
@@ -32,7 +35,8 @@
 }
 
 .main-header__logo {
-  align-self: center;
+  padding: 20px 0 19px 0;
+  margin: 0 auto;
 
   &:hover {
     opacity: 0.6;
@@ -43,6 +47,7 @@
   }
 
   @media (min-width: 768px) {
+    padding: 0;
     margin: 0;
     margin-right: 31%;
   }
@@ -80,18 +85,3 @@
   }
 }
 
-.user-list {
-  order: 1;
-
-  @media (min-width: 1150px) {
-    order: 3
-  }
-}
-
-.site-list {
-  order: 2;
-
-  @media (min-width: 1150px) {
-    order: 1;
-  }
-}
