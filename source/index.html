@@ -260,6 +260,41 @@
         </div>
       </div>
     </footer>
+    <section class="modal">
+      <div class="modal__overlay modal__overlay--closed"></div>
+      <div class="modal__wrapper modal__wrapper--closed">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <span class="modal__description">Выберите размер:</span>
+        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="modal__fieldset">
+            <ul class="modal__list">
+              <li class="modal__item">
+                <input class="modal__input visually-hidden" type="radio" id="order-size-s" name="order-size" value="s" checked>
+                <label class="modal__label" for="order-size-s">
+                    S
+                </label>
+              </li>
+              <li class="modal__item">
+                <input class="modal__input visually-hidden" type="radio" id="order-size-m" name="order-size" value="m">
+                <label class="modal__label" for="order-size-m">
+                    M
+                </label>
+              </li>
+              <li class="modal__item">
+                <input class="modal__input visually-hidden" type="radio" id="order-size-l" name="order-size" value="l">
+                <label class="modal__label" for="order-size-l">
+                    L
+                </label>
+              </li>
+            </ul>
+            <div class="modal__button-wrapper">
+              <button class="modal__button" type="submit">Добавить</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
     <script src="js/script.js"></script>
   </body>
 </html>

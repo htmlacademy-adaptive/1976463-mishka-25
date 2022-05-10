@@ -14,11 +14,11 @@
   margin-bottom: 29px;
 
   &:hover {
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   }
 
   &:active {
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 
   @media (min-width: 768px) {
@@ -35,17 +35,12 @@
 
 .products-list__title {
   margin: 0;
-  margin-bottom: 7px;
   font-size: 17px;
   line-height: 24px;
   margin-bottom: 6px;
 
   @media (min-width: 768px) {
     font-size: 20px;
-  }
-
-  @media (min-width: 1150px) {
-
   }
 }
 
@@ -68,11 +63,12 @@
 .products-list__cart-icon {
   fill: rgba(0, 0, 0, 0.2);
 }
+
 .products-list__link:hover .products-list__cart-icon {
   fill: rgba(99, 209, 187, 1);
 }
 
-.products-list__link:active .products-list__cart-icon{
+.products-list__link:active .products-list__cart-icon {
   fill: rgba(99, 209, 187, 0.3);
 }
 

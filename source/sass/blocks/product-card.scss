@@ -10,7 +10,6 @@
     box-sizing: border-box;
     padding-left: 175px;
     padding-top: 46px;
-    padding-bottom: 52px;
     max-width: 1050px;
     margin: 0 auto;
     padding-bottom: 74px;
@@ -98,7 +97,7 @@
 }
 
 .product-card__button {
-  @include standart-button;
+  @include standard-button;
 
   @media (min-width: 768px) {
     font-size: 17px;
@@ -141,7 +140,6 @@
     width: 50%;
     margin-top: 14px;
   }
-
 }
 
 .prodict-cart__content-wrapper {

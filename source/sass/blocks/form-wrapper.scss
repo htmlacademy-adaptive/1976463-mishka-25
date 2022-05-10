@@ -14,7 +14,7 @@
       display: block;
       width: 100%;
       height: 24px;
-      background-image: url("../../img/zigzag-fill-desktop.svg");
+      background-image: url("../img/zigzag-fill-desktop.svg");
       background-repeat: repeat-x;
       background-position: 50% 100%;
     }
@@ -24,15 +24,10 @@
     padding: 57px 30px 99px 30px;
     margin-bottom: 47px;
 
-    &:after {
-      content: "";
-      position: absolute;
+    &::after {
       bottom: -16px;
       left: 0;
-      display: block;
-      width: 100%;
       height: 40px;
-      background-image: url("../../img/zigzag-fill-desktop.svg");
       background-size: 1150px;
     }
   }
@@ -74,4 +69,3 @@
     margin: 0 auto;
   }
 }
-

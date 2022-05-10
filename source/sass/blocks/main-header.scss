@@ -13,7 +13,9 @@
 }
 
 .main-header--catalog {
-  background-color: #F1F1F1;
+  @media (min-width: 768px) {
+    background-color: #f1f1f1;
+  }
 }
 
 .main-header__container {
@@ -84,4 +86,3 @@
     display: block;
   }
 }
-
