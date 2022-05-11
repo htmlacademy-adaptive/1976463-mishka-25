@@ -30,22 +30,20 @@ buyButton.addEventListener('click', function () {
   }
 });
 
-var buttonItems = document.querySelectorAll('.products-list__link'),
-    index, button;
+const buttonItems = document.querySelectorAll('.products-list__link');
 
-for (index = 0; index < buttonItems.length; index++) {
-    button = buttonItems[index];
-    button.addEventListener('click', function () {
-      if (modalOverlay.classList.contains('modal__overlay--closed')) {
-        modalOverlay.classList.remove('modal__overlay--closed');
-        modalOverlay.classList.add('modal__overlay--opened');
-        modalWindow.classList.remove('modal__wrapper--closed');
-        modalWindow.classList.add('modal__wrapper--opened');
-      } else {
-        modalOverlay.classList.add('modal__overlay--closed');
-        modalOverlay.classList.remove('modal__overlay--opened');
-        modalWindow.classList.add('modal__wrapper--closed');
-        modalWindow.classList.remove('modal__wrapper--opened');
-      }
-    });
+for (let buttonItem of buttonItems) {
+  buttonItem.addEventListener('click', function () {
+    if (modalOverlay.classList.contains('modal__overlay--closed')) {
+      modalOverlay.classList.remove('modal__overlay--closed');
+      modalOverlay.classList.add('modal__overlay--opened');
+      modalWindow.classList.remove('modal__wrapper--closed');
+      modalWindow.classList.add('modal__wrapper--opened');
+    } else {
+      modalOverlay.classList.add('modal__overlay--closed');
+      modalOverlay.classList.remove('modal__overlay--opened');
+      modalWindow.classList.add('modal__wrapper--closed');
+      modalWindow.classList.remove('modal__wrapper--opened');
+    }
+  });
 }
