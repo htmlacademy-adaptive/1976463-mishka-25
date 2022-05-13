@@ -3,6 +3,8 @@ let navToggle = document.querySelector('.main-nav__toggle');
 let modalOverlay = document.querySelector('.modal__overlay')
 let buyButton = document.querySelector('.product-card__button');
 let modalWindow = document.querySelector('.modal__wrapper');
+let map = document.querySelector('.contacts__map');
+let mapImage = document.querySelector('.contacts__image');
 
 navMain.classList.remove('main-nav--nojs');
 
@@ -48,4 +50,9 @@ for (let buttonItem of buttonItems) {
       modalWindow.classList.remove('modal__wrapper--opened');
     }
   });
+}
+
+if (map) {
+  map.classList.remove('contacts__map--nojs');
+  mapImage.style.display = 'none';
 }

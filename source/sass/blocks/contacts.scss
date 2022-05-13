@@ -160,6 +160,25 @@
   }
 }
 
+.contacts__map--nojs {
+  display: none;
+}
+
+.contacts__image {
+  width: 100%;
+
+  @media (min-width: 768px) {
+    height: 457px;
+  }
+
+  @media (min-width: 1150px) {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 527px;
+  }
+}
+
 .contacts__button-wrapper {
   padding: 41px 30px 39px 30px;
 
