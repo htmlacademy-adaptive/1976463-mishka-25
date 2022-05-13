@@ -5,8 +5,6 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
-import htmlmin from 'gulp-htmlmin';
-import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
@@ -69,27 +67,15 @@ webp: {}
 // SVG
 
 const svg = () =>
-gulp.src(['source/img/.svg', '!source/img/icons/.svg'])
+gulp.src('source/img/*.svg')
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
-
-const sprite = () => {
-return gulp.src('source/img/icons/*.svg')
-.pipe(svgo())
-.pipe(svgstore({
-inlineSvg: true
-}))
-.pipe(rename('sprite.svg'))
-.pipe(gulp.dest('build/img'));
-}
 
 // Copy
 
 const copy = (done) => {
-gulp.src([
-'source/fonts/.{woff2,woff}',
-'source/.ico',
-], {
+gulp.src(
+'source/fonts/*.{woff2,woff}', {
 base: 'source'
 })
 .pipe(gulp.dest('build'))
@@ -126,9 +112,9 @@ done();
 // Watcher
 
 const watcher = () => {
-gulp.watch('source/sass/**/.scss', gulp.series(styles));
+gulp.watch('source/sass/**/*.scss', gulp.series(styles));
 gulp.watch('source/js/script.js', gulp.series(scripts));
-gulp.watch('source/.html', gulp.series(html, reload));
+gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 // Build
@@ -142,7 +128,6 @@ styles,
 html,
 scripts,
 svg,
-sprite,
 createWebp
 ),
 );
@@ -158,7 +143,6 @@ styles,
 html,
 scripts,
 svg,
-sprite,
 createWebp
 ),
 gulp.series(

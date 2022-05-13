@@ -129,7 +129,7 @@
   }
 }
 
-.poduction__description-wrapper {
+.production__description-wrapper {
   border: 1px solid #ececec;
   border-top: none;
   padding-bottom: 32px;
@@ -146,4 +146,10 @@
     padding: 11px 20px 41px 54px;
     border: none;
   }
+}
+
+.production__image {
+  width: 100%;
+  height: auto;
+  display: block;
 }
